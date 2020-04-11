@@ -1,1 +1,1 @@
-# Gatsby-Starter-Theme-Baked
+# Gatsby Starter Theme Naked - Core
