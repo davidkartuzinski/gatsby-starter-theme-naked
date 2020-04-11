@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "starter",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "gatsby build",
+    "start": "gatsby develop",
+    "develop": "gatsby develop",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "latest",
+    "gatsby-theme-naked-core": "*"
+  },
+  "license": "MIT"
+}

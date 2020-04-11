@@ -1,0 +1,12 @@
+{
+  "name": "gatsbthemenaked",
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*",
+    "starter"
+  ],
+  "main": "index.js",
+  "author": "David Kartuzinski",
+  "license": "MIT",
+  "private": true
+}
