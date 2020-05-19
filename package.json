@@ -1,5 +1,5 @@
 {
-  "name": "gatsbthemenaked",
+  "name": "gatsbythemenaked",
   "version": "1.0.0",
   "workspaces": [
     "packages/*",

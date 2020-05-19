@@ -3,7 +3,7 @@ import SEO from "../components/core/seo"
 import Layout from "../components/structure/layout"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import NakedBreadcrumb from "../components/core/breadcrumb"
-import Aside from "../components/structure/aside"
+import Aside from "../components/aside"
 import { graphql, Link } from "gatsby"
 import Image from "gatsby-image"
 

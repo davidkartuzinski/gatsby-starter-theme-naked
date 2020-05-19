@@ -6,7 +6,7 @@ import SEO from "../components/core/seo"
 import { TagsIcon } from "../components/core/icons.js"
 import NakedBreadcrumb from "../components/core/breadcrumb"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-import Aside from "../components/structure/aside"
+import Aside from "../components/aside"
 
 const Tags = ({ pageContext, data, location }) => {
   const { logo, title } = useSiteMetadata()

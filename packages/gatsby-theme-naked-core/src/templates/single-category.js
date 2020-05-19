@@ -6,7 +6,7 @@ import SEO from "../components/core/seo"
 import NakedBreadcrumb from "../components/core/breadcrumb"
 import { CategoriesIcon } from "../components/core/icons.js"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-import Aside from "../components/structure/aside"
+import Aside from "../components/aside"
 
 const Categories = ({ data, pageContext, location }) => {
   const { logo, title } = useSiteMetadata()
