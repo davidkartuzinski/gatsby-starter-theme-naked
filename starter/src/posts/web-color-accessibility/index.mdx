@@ -1,16 +1,16 @@
 ---
-title: "Web Color Accessibility"
-slug: "web-color-accessibility"
+title: 'Web Color Accessibility'
+slug: 'web-color-accessibility'
 date: 2020-03-04
 dateModified: 2020-03-04
-author: "David Kartuzinski"
-description: "A step-by-step case study for non-designers for choosing a color pallette that follows web color accessibility guidelines."
-categories: ["Accessibility", "Color Palettes", "web color accessibility"]
-tags: ["Accessibility", "web color accessibility", "Color Palette"]
-image: "./color-palette.png"
-imageAlt: "Color palette example using the Learnui.design Accessible tool"
-imageFigcaption: "A tool by Learnui.design for checking color accessibility and color contrast."
-canonical: ""
+author: 'David Kartuzinski'
+description: 'A step-by-step case study for non-designers for choosing a color pallette that follows web color accessibility guidelines.'
+categories: ['Accessibility', 'Color Palettes', 'web color accessibility']
+tags: ['Accessibility', 'web color accessibility', 'Color Palette']
+image: './color-palette.png'
+imageAlt: 'Color palette example using the Learnui.design Accessible tool'
+imageFigcaption: 'A tool by Learnui.design for checking color accessibility and color contrast.'
+canonical: ''
 ---
 
 **Web Color Accessibility** includes the concept of being, "[Perceivable](https://www.w3.org/TR/UNDERSTANDING-WCAG20/intro.html)". Part of this, is there must be sufficient color contrast and size between elements. Follow along and see the steps I took to bring this theme within the _WCAG Guidelines_.
@@ -45,9 +45,9 @@ My starting palette looks like this:
 
 <figure>
   <Image
-    src="./initial-color-scheme.png"
-    alt="Initial color scheme including orange, brown, grey and an off-white"
-    className=""
+    src='./initial-color-scheme.png'
+    alt='Initial color scheme including orange, brown, grey and an off-white'
+    className=''
   />
   <figcaption>
     Initial color scheme including orange, brown, grey and an off-white
@@ -88,9 +88,9 @@ The initial color choices for the site wide message:
 
 <figure>
   <Image
-    src="./text-widget-before.png"
-    alt="The original text widget message"
-    className=""
+    src='./text-widget-before.png'
+    alt='The original text widget message'
+    className=''
   />
   <figcaption>The original text widget message.</figcaption>
 </figure>
@@ -99,9 +99,9 @@ I check the contrast using the WebAim Contrast Checker and get a **pass**.
 
 <figure>
   <Image
-    src="./pass-on-text-widget.png"
-    alt="showing that this color combination passed"
-    className=""
+    src='./pass-on-text-widget.png'
+    alt='showing that this color combination passed'
+    className=''
   />
   <figcaption>
     Shows that this color combination is accessible with a pass.
@@ -116,9 +116,9 @@ I want the email opt in box to stand out. It is the main general call-to-action 
 
 <figure>
   <Image
-    src="./mailchimp-before.png"
-    alt="this is the mailchimp signup box before making it accessible"
-    className=""
+    src='./mailchimp-before.png'
+    alt='this is the mailchimp signup box before making it accessible'
+    className=''
   />
   <figcaption>
     This email signup or opt in box before making it accessible.
@@ -138,9 +138,9 @@ To fix this, use the [LearnUi Design Color Accessibility tool](https://learnui.d
 
 <figure>
   <Image
-    src="./learnui.design-orange.png"
-    alt="orange color options on learnui.design accessibility tool"
-    className=""
+    src='./learnui.design-orange.png'
+    alt='orange color options on learnui.design accessibility tool'
+    className=''
   />
   <figcaption>
     Result of the learnui.design accessibility tool for orange #FF9F2F.
@@ -193,9 +193,9 @@ The theme was using the [SolarizedLight theme](https://github.com/PrismJS/prism/
 
 <figure>
   <Image
-    src="./code-editor-block.png"
-    alt="this is the code editor block before making it accessible"
-    className=""
+    src='./code-editor-block.png'
+    alt='this is the code editor block before making it accessible'
+    className=''
   />
   <figcaption>This code editor block before making it accessible.</figcaption>
 </figure>
@@ -208,10 +208,10 @@ There isn't the contrast necessary to pass web color accessibility guidelines. F
 First, I found a great theme called [A11y Dark](https://github.com/PrismJS/prism-themes/blob/master/themes/prism-a11y-dark.css). The colors are perfect, and pass the Axe Accessibility plugin check. I installed the [Prism themes libary](https://github.com/PrismJS/prism-themes) with `yarn add prism-themes`. I replaced the `require` statement in the `gatsby-browser.js` file.
 
 ```js
-import "./src/styles/global.css"
-require("prism-themes/themes/prism-a11y-dark.css")
-require("prismjs/plugins/line-numbers/prism-line-numbers.css")
-require("prismjs/plugins/command-line/prism-command-line.css")
+import './src/styles/global.css';
+require('prism-themes/themes/prism-a11y-dark.css');
+require('prismjs/plugins/line-numbers/prism-line-numbers.css');
+require('prismjs/plugins/command-line/prism-command-line.css');
 ```
 
 Next, I tweaked the CSS that was in the `global.css` file. The `background-color` properties had to be replaced or removed to match the new theme. This part of the CSS looks like this:
@@ -223,7 +223,7 @@ margin and overflow that we removed from <pre>. */
 .gatsby-highlight {
   /* background-color: #fdf6e3; */
 }
-.gatsby-highlight pre[class*="language-"] {
+.gatsby-highlight pre[class*='language-'] {
   /* background-color: transparent; */
 }
 .gatsby-highlight {

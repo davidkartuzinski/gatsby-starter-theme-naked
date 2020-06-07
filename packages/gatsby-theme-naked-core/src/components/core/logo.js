@@ -8,7 +8,11 @@ const Logo = () => {
   return (
     <div className="logo">
       <Link to="/">
-        <Image fluid={data.logo.childImageSharp.fluid} alt="logo for website" />
+        <Image
+          fluid={data.logo.childImageSharp.fluid}
+          alt="logo for website"
+          loading="eager"
+        />
       </Link>
     </div>
   )
